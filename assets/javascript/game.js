@@ -15,9 +15,10 @@ $(document).ready(function () {
     function changeCrystals() {
         for (var i = 0; i < 4; i++) {
             var crystValNumber = crystNumGenerator();
-            console.log('value of ' + i + 'th image: ' + crystValNumber);
+            console.log('value of ' + (i+1) + 'th image: ' + crystValNumber);
             $('.img-crystals').append('<img class="crystal" value=' + crystValNumber + ' src="assets/images/crystal-' + i + '.jpg">');
         };
+        console.log("*****");
     }
     function reset() {
         $('.img-crystals').empty();
@@ -47,7 +48,6 @@ $(document).ready(function () {
             var crystIntValue = parseInt(crystValue);
             totalVal = totalVal + crystIntValue;
             $('#total-value').text(totalVal);
-            console.log('totalVal: ' + totalVal + ' and genNumber: ' + genNumber);
             winnerORloser();
         });
     };
@@ -58,10 +58,8 @@ $(document).ready(function () {
             $('#win').text(wins);
             reset();
             setTimeout(function () {
-                wins++;
-                $('#win').text(wins);
-                $('#did-i-win').text('.')
-            }, 2000);
+                $('#did-i-win').text('_')
+            }, 600);
             $('#did-i-win').text('You Won!!');
         }
         else if (totalVal > genNumber) {
@@ -69,11 +67,26 @@ $(document).ready(function () {
             $('#loss').text(losses);
             reset();
             setTimeout(function () {
-                $('#did-i-win').text('.')
+                $('#did-i-win').text('_')
             }, 600);
             $('#did-i-win').text('You Lost.');
         }
     };
+
+    function gameRestart() {
+        wins = 0;
+        losses = 0;
+        $('#win').text(wins);
+        $('#loss').text(losses);
+        console.log("****Whole Game Restarted!***")
+        reset();
+    }
+
+    $('#start-over').on('click', function () {
+        gameRestart();
+    });
+
+
 
     // resetO
 

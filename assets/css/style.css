@@ -18,7 +18,7 @@ header {
     background: rgb(250, 131, 52);
     color: #fff;
     letter-spacing: 4px;
-    padding: 40px;
+    padding: 35px;
     animation-name: ani-header;
     animation-duration: 2s;
     animation-direction: alternate;
@@ -150,3 +150,22 @@ h1 {
     display: table;
 }
 
+#start-over{
+    margin: 0 auto;
+    width: 500px;
+    text-align: center;
+    font-weight: bold;
+    color: #333;
+    padding: 20px;
+    background: #b03f3d;
+}
+
+#start-over:hover {
+    color: #ccc;
+    background: #7b2120;
+    border: 2px solid #000;
+}
+
+#start-over:active {
+    border: 2px solid #ccc;
+}
