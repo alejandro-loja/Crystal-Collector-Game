@@ -54,16 +54,22 @@ h1 {
       
 }
 
+#win, #loss {
+    font-weight: bold;
+}
+
 .tally {
-    width: 100px;
+    width: 200px;
     padding: 20px;
     text-align: center; 
     float: right;
+    position: relative;
     background: #EDCB96;
     
 }
 
 .number-place-1 {
+    float: left;
     box-sizing: border-box;
     width: 400px;
     padding: 40px;
@@ -104,7 +110,7 @@ h1 {
     float: left;
     background: #EDCB96;
     animation-name: ani-crystal;
-    animation-duration: 1s;
+    animation-duration: 1.5s;
     animation-direction: alternate;
     animation-iteration-count: infinite;
 }
