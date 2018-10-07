@@ -15,13 +15,21 @@ header {
     width: 450px;
     margin: 0 auto;
     margin-bottom: 10px;
-    background: #FA8334;
+    background: rgb(250, 131, 52);
     color: #fff;
     letter-spacing: 4px;
     padding: 40px;
-
-
+    animation-name: ani-header;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
 }
+
+@keyframes ani-header {
+    from {background-color: rgb(250, 131, 52);}
+    to {background-color: rgb(250, 200, 52);}
+}
+
 
 h1 {
     font-size: 28px;
@@ -95,13 +103,33 @@ h1 {
     padding: 10px;
     float: left;
     background: #EDCB96;
-    
+    animation-name: ani-crystal;
+    animation-duration: 1s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
 }
+
+@keyframes ani-crystal {
+    from {background-color: #EDCB96;}
+    to {background-color: #fff;}
+}    
+
+
+
 
 .crystal {
     width: 100px;
     height: 100px;
     border: 2px dotted #999;
+}
+
+.crystal:hover {
+    border: 2px solid #666;
+}
+
+.crystal:active {
+    opacity: 0.8;
+    border: 2px dotted #333;
 }
 
 #did-i-win {
@@ -115,3 +143,4 @@ h1 {
     clear: both;
     display: table;
 }
+
