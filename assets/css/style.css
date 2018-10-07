@@ -1,10 +1,10 @@
 body {
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 16px;
+    line-height: 16px;
     color: #222;
     padding: 10px;
-    background: url("../images/diamond_upholstery.png");
+    background: url("../images/dark_embroidery.png");
 }
 header, div{
     border: 2px solid #555; 
@@ -29,10 +29,11 @@ h1 {
 }
 
 .instructions {
+    box-sizing: border-box;
     width: 700px;
     margin: 0 auto;
     margin-bottom: 10px;
-    padding: 10px;
+    padding: 20px;
     background: #EDCB96;
 }
 
@@ -71,8 +72,9 @@ h1 {
 
 }
 
-#gen-number {
+#gen-number, #total-value {
     padding: 20px;
+    font-weight: bold;
 }
 .cryst-tot {
     width: 700px; 
@@ -84,7 +86,6 @@ h1 {
 
 
 #total-value {
-    float: left;
     text-align: center;
 
 }
@@ -103,6 +104,10 @@ h1 {
     border: 2px dotted #999;
 }
 
+#did-i-win {
+    letter-spacing: 5px;
+    font-weight: bold;
+}
 
 
 .clearfix::after {
