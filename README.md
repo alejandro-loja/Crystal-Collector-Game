@@ -1,5 +1,9 @@
 # unit-4-game
-Crystal Collector Game
+[link to the Crystal Collector Game!](https://alejandro-loja.github.io/unit-4-game/)
+
+In this assignment I am familarizing myself with jQuery. I create my own CSS style and added some subtle animation.
+
+##Rules: Crystal Collector Game
   You will get a random number at the beginning of the game.
 
   By clicking on a crystal you will add to your score.
